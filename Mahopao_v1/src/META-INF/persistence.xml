@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="Mahopao_v1" transaction-type="JTA">
+	
+	
+			<jta-data-source>jdbc/__Test</jta-data-source>
+			<class>com.model.entity.Item</class>
+			<class>com.model.entity.Type</class>
+			<exclude-unlisted-classes/> <!-- Do not include entity in jars (<jar-file>  without scan entities in jars) -->
+	</persistence-unit>
+</persistence>
